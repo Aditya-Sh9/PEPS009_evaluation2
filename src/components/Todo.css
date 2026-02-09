@@ -1,7 +1,6 @@
-/* FULL SCREEN FIX */
 html, body {
   height: 100%;
-  width: 100%;      /* ← ADD THIS */
+  width: 100%;  
   margin: 0;
   padding: 0;
 }
@@ -9,18 +8,16 @@ html, body {
 .page {
   background: linear-gradient(135deg, #0a0f24, #102a43);
   min-height: 100vh;
-  width: 100vw;       /* ← FORCE FULL WIDTH */
+  width: 100vw;
   display: flex;
   justify-content: center;
   align-items: center;
-  position: fixed;    /* ← STRETCH OVER WHOLE SCREEN */
+  position: fixed;    
   top: 0;
   left: 0;
 }
 
 
-
-/* Main Box */
 .todo-box {
   background: #1a2238;
   width: 380px;
@@ -37,7 +34,6 @@ html, body {
   color: #4da8ff;
 }
 
-/* Stats */
 .stats {
   display: flex;
   justify-content: space-between;
@@ -46,7 +42,6 @@ html, body {
   color: #c8d3f5;
 }
 
-/* Input + Button */
 .input-row {
   display: flex;
   gap: 8px;
@@ -73,7 +68,6 @@ html, body {
   cursor: pointer;
 }
 
-/* Filters */
 .filters {
   display: flex;
   justify-content: space-between;
@@ -96,7 +90,6 @@ html, body {
   color: black;
 }
 
-/* Tasks */
 .task-list {
   padding: 0;
   margin: 0;
@@ -117,13 +110,11 @@ html, body {
   margin-left: 10px;
 }
 
-/* Completed Style */
 .task-list li.completed span {
   text-decoration: line-through;
   color: #7a8ba3;
 }
 
-/* Delete Button */
 .del-btn {
   background: #ff4d4d;
   border: none;

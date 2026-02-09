@@ -4,7 +4,6 @@ import TodoApp from './components/todo.jsx'
 
 function App() {
   return (
-    
     <TodoApp />
   )
 }
