@@ -1,0 +1,138 @@
+/* FULL SCREEN FIX */
+html, body {
+  height: 100%;
+  width: 100%;      /* ← ADD THIS */
+  margin: 0;
+  padding: 0;
+}
+
+.page {
+  background: linear-gradient(135deg, #0a0f24, #102a43);
+  min-height: 100vh;
+  width: 100vw;       /* ← FORCE FULL WIDTH */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;    /* ← STRETCH OVER WHOLE SCREEN */
+  top: 0;
+  left: 0;
+}
+
+
+
+/* Main Box */
+.todo-box {
+  background: #1a2238;
+  width: 380px;
+  padding: 20px;
+  border-radius: 12px;
+  color: white;
+  box-shadow: 0px 0px 20px rgba(0,0,0,0.4);
+  border: 1px solid #2e3b55;
+}
+
+.todo-box h2 {
+  text-align: center;
+  margin-bottom: 15px;
+  color: #4da8ff;
+}
+
+/* Stats */
+.stats {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 15px;
+  font-size: 14px;
+  color: #c8d3f5;
+}
+
+/* Input + Button */
+.input-row {
+  display: flex;
+  gap: 8px;
+  margin-bottom: 15px;
+}
+
+.input-row input {
+  flex: 1;
+  padding: 8px;
+  border-radius: 6px;
+  border: none;
+  outline: none;
+  background: #2e3b55;
+  color: white;
+}
+
+.input-row button {
+  padding: 8px 12px;
+  background: #4da8ff;
+  border: none;
+  border-radius: 6px;
+  color: #000;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+/* Filters */
+.filters {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 15px;
+}
+
+.filters button {
+  flex: 1;
+  margin: 0 3px;
+  padding: 6px;
+  background: #27334e;
+  border: none;
+  border-radius: 6px;
+  color: #bcd;
+  cursor: pointer;
+}
+
+.filters button:hover {
+  background: #4da8ff;
+  color: black;
+}
+
+/* Tasks */
+.task-list {
+  padding: 0;
+  margin: 0;
+}
+
+.task-list li {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  background: #27334e;
+  padding: 8px;
+  border-radius: 6px;
+  margin-bottom: 8px;
+}
+
+.task-list li span {
+  flex: 1;
+  margin-left: 10px;
+}
+
+/* Completed Style */
+.task-list li.completed span {
+  text-decoration: line-through;
+  color: #7a8ba3;
+}
+
+/* Delete Button */
+.del-btn {
+  background: #ff4d4d;
+  border: none;
+  padding: 4px 8px;
+  border-radius: 6px;
+  color: white;
+  cursor: pointer;
+}
+
+.del-btn:hover {
+  background: #ff1a1a;
+}
